@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nescafé — Scroll to brew</title>
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="track"><div id="stage">
+<div id="hero"><h1>NESCAFÉ</h1><small>CLASSIC · ICED</small><p>One sachet. One scroll. Watch your iced coffee get made.</p></div>
+<canvas id="cv"></canvas><div id="vig"></div><div id="scrim"></div><div id="sweep"></div><div id="flash"></div><canvas id="grain"></canvas><div class="bar" id="bt"></div><div class="bar" id="bb"></div><div id="frame"><i></i><i></i><i></i><i></i></div><div id="hud"><b id="cn">01</b><span>/ 04</span><em id="cs">SACHET</em></div><div id="rail"><u id="rf"></u><span id="pct">00</span></div>
+<header><div class="logo">NESCAFÉ<b></b></div><button id="cartBtn">Cart (<span id="cc">0</span>)</button></header>
+<div class="ch" id="c1"><span class="k">01 — THE SACHET</span><h2>Born in 1938</h2><p>Nestlé launched Nescafé in Switzerland after years of research into keeping coffee fresh. One sachet of soluble coffee started a habit that went around the world.</p></div>
+<div class="ch" id="c2"><span class="k">02 — THE BREW</span><h2>Brewed, then dried</h2><p>Nescafé starts with roasted coffee beans that are brewed and dried into soluble granules, so water turns them into coffee in seconds.</p></div>
+<div class="ch" id="c3"><span class="k">03 — THE ICE</span><h2>Pour over ice</h2><p>Nescafé works as well cold as hot. The granules dissolve fast, so the ice stays cold and the coffee stays strong.</p></div>
+<div class="ch" id="c4"><span class="k">04 — THE SERVE</span><h2>Your cup is ready</h2><p>Nescafé is made for everyday moments: a slow morning, a study break, a long afternoon. Pick yours up.</p></div>
+<button id="grab">Grab it</button>
+<div id="panel" role="dialog" aria-label="Choose quantity">
+<span class="k">THE COLLECTION</span><h3>Nescafé Iced Classic</h3><p>Box of 10 sachets. Each makes one iced coffee.</p>
+<div class="qty"><b>Quantity</b><div><button id="mi" aria-label="Fewer">−</button><span id="q">1</span><button id="pl" aria-label="More">+</button></div></div>
+<button class="add" id="add">Add to cart · $<span id="pr">4.50</span></button></div>
+<div id="hint">Scroll to brew ↓</div>
+<div id="load">NESCAFÉ</div>
+</div></div>
+<aside id="drawer"><h3 >Your cart</h3>
+<div id="items" style="flex:1;line-height:1.6">Your cart is empty. Grab a cup to start.</div>
+<div class="row"><span>Total</span><span id="tot">$0.00</span></div>
+<button class="add" id="co">Checkout</button>
+<button class="add ghost" id="cl">Keep browsing</button></aside>
+<div id="toast"></div>
+<script src="js/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
